@@ -37,6 +37,7 @@ bool BlueToolFixup::start(IOService *provider) {
         return false;
     }
     setProperty("VersionInfo", kextVersion);
+    setName("Broadcom Bluetooth Download Device");
     registerService();
     
     return true;
